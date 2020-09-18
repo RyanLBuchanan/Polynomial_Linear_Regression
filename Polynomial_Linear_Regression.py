@@ -25,10 +25,11 @@ lin_reg_2.fit(X_poly, y)
 
 # Visualize the Linear Regression results
 plt.scatter(X, y, color='red')
-plt.plot(X, lin_reg.predict(X), color = 'blue')
+plt.legend()
 plt.title('Truth or Bluff (Linear Regression)')
 plt.xlabel('Position Level')
 plt.ylabel('Salary')
+plt.plot(X, lin_reg.predict(X), color = 'blue', label='blaaah')
 plt.show()
 
 # Visualize the Linear Regression results (for higher resolution and smoother curve)
